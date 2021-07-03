@@ -1,0 +1,125 @@
+div{
+    margin:5px;
+    padding:2px;
+    border-style:solid;
+}
+article{
+    margin:5px;
+    padding:2px;
+    border-style: solid;
+    animation: bordarticle 4s infinite;
+}
+td{
+    margin:2px;
+    padding:2px;
+    border-style:dashed;
+    text-align: center;
+}
+#ProgressBar{
+    height:5%;
+    margin:5px;
+    margin-left:0px;
+}
+#banner{
+    max-width: 50%;
+}
+img.formImg{
+    max-width:12.5%;
+    display: inline;
+}
+img.formImg:hover{
+    max-width:100%;
+    display: block;
+}
+img.icon{
+    max-width:20px;
+    display: inline;
+}
+img.icon:hover{
+    max-width:20px;
+    display: inline;
+}
+a{
+    color:blue;
+}
+body{
+    border-style:solid;
+    border-color:darkgray;
+    padding: 10px;
+    animation: bckg 10s infinite;
+}
+#planeicon{
+    animation: trip 2s infinite;
+}
+#planeicon:hover{
+    animation: trip 0.5s infinite;
+}
+#houseicon{
+    animation: goodolddays 2s infinite;
+}
+#houseicon:hover{
+    animation: goodyoungdays 1s infinite;
+}
+#workicon{
+    filter: brightness(0%);
+    animation: confused 2s infinite;
+}
+#workicon:hover{
+    animation: letsparty 1s infinite;
+}
+@keyframes bordarticle{
+    0%{border-style: solid;}
+    25%{border-style: dotted;}
+    50%{border-style: dashed;}
+    75%{border-style: dotted;}
+    100%{border-style: solid;}
+}
+@keyframes bckg{
+    0%{background-color: #ddffff;}
+    25%{background-color: #ddddff;}
+    50%{background-color: #ddffff;}
+    75%{background-color: #ffffff;}
+    100%{background-color: #ddffff;}
+}
+@keyframes trip{
+    12.5%{transform:rotate(45deg);}
+    25%{transform:rotate(90deg);}
+    37.5%{transform:rotate(135deg);}
+    50%{transform:rotate(180deg);}
+    62.5%{transform:rotate(225deg);}
+    75%{transform:rotate(270deg);}
+    87.5%{transform:rotate(315deg);}
+    100%{transform:rotate(360deg);}
+}
+@keyframes goodolddays{
+    25%{filter:sepia(50%);}
+    50%{filter:sepia(100%);}
+    75%{filter:sepia(50%);}
+    100%{filter:sepia(0%);}
+}
+@keyframes goodyoungdays{
+    25%{filter:invert(50%);}
+    50%{filter:invert(100%);}
+    75%{filter:invert(50%);}
+    100%{filter:invert(0%);}
+}
+@keyframes confused{
+    12.5%{filter:blur(0.5px) brightness(0%);}
+    25%{filter:blur(1px) brightness(0%);}
+    37.5%{filter:blur(1.5px) brightness(0%);}
+    50%{filter:blur(2px) brightness(0%);}
+    62.5%{filter:blur(1.5px) brightness(0%);}
+    75%{filter:blur(1px) brightness(0%);}
+    87.5%{filter:blur(0.5px) brightness(0%);}
+    100%{filter:blur(0px) brightness(0%);}
+}
+@keyframes letsparty{
+    12.5%{filter:hue-rotate(45deg);}
+    25%{filter:hue-rotate(90deg);}
+    37.5%{filter:hue-rotate(135deg);}
+    50%{filter:hue-rotate(180deg);}
+    62.5%{filter:hue-rotate(225deg);}
+    75%{filter:hue-rotate(270deg);}
+    87.5%{filter:hue-rotate(315deg);}
+    100%{filter:hue-rotate(360deg);}
+}
